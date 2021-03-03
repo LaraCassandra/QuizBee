@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizMe">
-        <activity android:name=".CategoriesActivity"></activity>
+        <activity android:name=".CategoriesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
