@@ -13,12 +13,6 @@ class CategoriesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_categories)
 
-        // EXTRACT THE STRING FROM THE INTENT
-        val userName = intent.getStringArrayExtra(EXTRA_MESSAGE)
-
-        // SET TEXT IN CATEGORY LAYOUT
-        tv_name.text = "Hi " + userName + "!"
-
         // CATEGORY 1
         btn_cat1.setOnClickListener {
             val intent = Intent(this, LandQuestionOneActivity::class.java)

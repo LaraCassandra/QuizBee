@@ -2,6 +2,11 @@ package com.example.quizme
 
 object Constants {
 
+    // USER AND THEIR QUESTION RESULT CONSTANT
+    const val USER_NAME: String = "username"
+    const val LAND_WRONG_ANSWERS: String = "landWrongAnswers"
+
+
     // LAND QUESTIONS ARRAY
     fun getLandQuestions(): ArrayList<Question> {
 

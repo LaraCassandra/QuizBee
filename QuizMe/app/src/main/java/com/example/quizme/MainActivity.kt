@@ -22,14 +22,12 @@ class MainActivity : AppCompatActivity() {
         // START BUTTON FUNCTION
         btn_start.setOnClickListener {
 
-            // NAME VALIDATION
+            // NAME VALIDATION (CHECK THAT USER TYPED IN SOMETHING)
             if(et_name.text.toString().isEmpty()){
                 Toast.makeText(this, "Please enter your name", Toast.LENGTH_SHORT).show()
             }
             else {
-                val intent = Intent(this, CategoriesActivity::class.java).apply {
-                    putExtra(EXTRA_MESSAGE, et_name.text.toString())
-                }
+                val intent = Intent(this, CategoriesActivity::class.java)
                 startActivity(intent)
                 finish()
             }

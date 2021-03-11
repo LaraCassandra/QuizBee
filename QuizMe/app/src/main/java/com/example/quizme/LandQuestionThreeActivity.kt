@@ -7,18 +7,18 @@ import android.widget.RadioButton
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_land_question_one.*
 
-class LandQuestionTwoActivity : AppCompatActivity() {
+class LandQuestionThreeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_land_question_two)
+        setContentView(R.layout.activity_land_question_three)
 
         var landWrongAnswers = intent.getIntExtra(Constants.LAND_WRONG_ANSWERS, 0)
 
         // GET QUESTION
         val landQuestionsList = Constants.getLandQuestions()
 
-        val landQuestionNumber = 2
-        val landQuestion = landQuestionsList[landQuestionNumber]
+        val landQuestionNumber = 3
+        val landQuestion = landQuestionsList[landQuestionNumber + 1]
 
         // SET FRONTEND ELEMENTS
         tv_landQuestion.text = landQuestion.question
