@@ -18,10 +18,6 @@ class MainActivity : AppCompatActivity() {
         // MAKE APP FULLSCREEN
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
-        // REFERENCE TO UI
-        val btn_start = findViewById<Button>(R.id.btn_start)
-        val et_name = findViewById<TextView>(R.id.et_name)
-
         // START BUTTON FUNCTION
         btn_start.setOnClickListener {
 
