@@ -47,7 +47,7 @@ class LandQuestionTwoActivity : AppCompatActivity() {
                 }
 
                 //NAVIGATION
-                val intent = Intent(this, LandQuestionTwoActivity::class.java)
+                val intent = Intent(this, LandQuestionThreeActivity::class.java)
                 intent.putExtra(Constants.LAND_WRONG_ANSWERS, landWrongAnswers)
                 startActivity(intent)
                 finish()

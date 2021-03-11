@@ -5,6 +5,7 @@ object Constants {
     // USER AND THEIR QUESTION RESULT CONSTANT
     const val USER_NAME: String = "username"
     const val LAND_WRONG_ANSWERS: String = "landWrongAnswers"
+    const val SEA_WRONG_ANSWERS: String = "seaWrongAnswers"
 
 
     // LAND QUESTIONS ARRAY
