@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.widget.Button
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_categories.*
 
 class CategoriesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,8 +21,8 @@ class CategoriesActivity : AppCompatActivity() {
 
         // CATEGORY 1
         btn_cat1.setOnClickListener {
-            val landIntent = Intent(this, LandQuestionOneActivity::class.java)
-            startActivity(landIntent)
+            val intent = Intent(this, LandQuestionOneActivity::class.java)
+            startActivity(intent)
         }
 
     }

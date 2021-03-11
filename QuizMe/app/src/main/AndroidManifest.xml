@@ -10,15 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizMe">
         <activity
-            android:name=".LandQuestionOneActivity"
+            android:name=".LandQuestionTwoActivity"
+            android:label="Land Animals - Question 2"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize"
-            android:theme="@style/QuestionsTheme"></activity>
+            android:theme="@style/QuestionsTheme"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".LandQuestionOneActivity"
+            android:label="Land Animals - Question 1"
+            android:screenOrientation="portrait"
+            android:theme="@style/QuestionsTheme"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".CategoriesActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
-            android:windowSoftInputMode="adjustResize"></activity>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"

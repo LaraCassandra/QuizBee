@@ -3,7 +3,7 @@ package com.example.quizme
 object Constants {
 
     // LAND QUESTIONS ARRAY
-    fun getLandQuestions() {
+    fun getLandQuestions(): ArrayList<Question> {
 
         val landQuestionsList = ArrayList<Question>()
 
@@ -39,11 +39,13 @@ object Constants {
         landQuestionsList.add(landQue2)
         landQuestionsList.add(landQue3)
 
+        return landQuestionsList
+
     }
 
 
     // SEA QUESTIONS ARRAY
-    fun getSeaQuestions(){
+    fun getSeaQuestions(): ArrayList<Question> {
 
         val seaQuestionsList = ArrayList<Question>()
 
@@ -78,10 +80,12 @@ object Constants {
         seaQuestionsList.add(seaQue2)
         seaQuestionsList.add(seaQue3)
 
+        return seaQuestionsList
+
     }
 
     // SKY QUESTIONS ARRAY
-    fun getSkyQuestions(){
+    fun getSkyQuestions(): ArrayList<Question> {
 
         val skyQuestionsList = ArrayList<Question>()
 
@@ -112,10 +116,16 @@ object Constants {
             "Bald Eagle"
         )
 
+        skyQuestionsList.add(skyQue1)
+        skyQuestionsList.add(skyQue2)
+        skyQuestionsList.add(skyQue3)
+
+        return skyQuestionsList
+
     }
 
     // GENERAL QUESTIONS ARRAY
-    fun getGeneralQuestions(){
+    fun getGeneralQuestions(): ArrayList<Question> {
 
         val generalQuestionsList = ArrayList<Question>()
 
@@ -145,6 +155,12 @@ object Constants {
             "Squirrel",
             "Koala"
         )
+
+        generalQuestionsList.add(genQue1)
+        generalQuestionsList.add(genQue2)
+        generalQuestionsList.add(genQue3)
+
+        return generalQuestionsList
 
     }
 
