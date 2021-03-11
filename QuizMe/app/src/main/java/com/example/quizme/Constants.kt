@@ -6,7 +6,7 @@ object Constants {
     const val USER_NAME: String = "username"
     const val LAND_WRONG_ANSWERS: String = "landWrongAnswers"
     const val SEA_WRONG_ANSWERS: String = "seaWrongAnswers"
-
+    const val SKY_WRONG_ANSWERS: String = "skyWrongAnswers"
 
     // LAND QUESTIONS ARRAY
     fun getLandQuestions(): ArrayList<Question> {

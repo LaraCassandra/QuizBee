@@ -9,24 +9,39 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizMe">
+        <activity android:name=".SkyQuestionOneActivity"
+            android:label="Sky Animals - Question 1"
+            android:screenOrientation="portrait"
+            android:theme="@style/QuestionsTheme"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".SkyQuestionThreeActivity"
+            android:label="Sky Animals - Question 3"
+            android:screenOrientation="portrait"
+            android:theme="@style/QuestionsTheme"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".SkyQuestionTwoActivity"
+            android:label="Sky Animals - Question 2"
+            android:screenOrientation="portrait"
+            android:theme="@style/QuestionsTheme"
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".SeaQuestionThreeActivity"
             android:label="Sea Animals - Question 3"
             android:screenOrientation="portrait"
             android:theme="@style/QuestionsTheme"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".SeaQuestionTwoActivity"
             android:label="Sea Animals - Question 2"
             android:screenOrientation="portrait"
             android:theme="@style/QuestionsTheme"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".SeaQuestionOneActivity"
             android:label="Sea Animals - Question 1"
             android:screenOrientation="portrait"
             android:theme="@style/QuestionsTheme"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".LandQuestionThreeActivity"
             android:label="Land Animals - Question 3"
