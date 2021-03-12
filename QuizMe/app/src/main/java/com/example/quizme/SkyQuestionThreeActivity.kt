@@ -51,7 +51,7 @@ class SkyQuestionThreeActivity : AppCompatActivity() {
                 }
 
                 //NAVIGATION
-                val intent = Intent(this, SkyQuestionThreeActivity::class.java)
+                val intent = Intent(this, ResultsPageActivity::class.java)
                 intent.putExtra(Constants.SKY_WRONG_ANSWERS, skyWrongAnswers)
                 startActivity(intent)
                 finish()
