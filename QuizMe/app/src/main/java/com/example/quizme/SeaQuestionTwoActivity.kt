@@ -20,8 +20,8 @@ class SeaQuestionTwoActivity : AppCompatActivity() {
         // GET QUESTION 2
         val seaQuestionsList = Constants.getSeaQuestions()
 
-        val seaQuestionNumber = 1
-        val seaQuestion = seaQuestionsList[seaQuestionNumber - 1]
+        //val seaQuestionNumber = 1
+        val seaQuestion = seaQuestionsList[1]
 
         // SET FRONTEND ELEMENTS (DISPLAY THE QUESTION AND ANSWER OPTIONS)
         tv_seaQuestion.text = seaQuestion.question
@@ -29,7 +29,7 @@ class SeaQuestionTwoActivity : AppCompatActivity() {
         rb_sea_answer_two.text = seaQuestion.optionTwo
         rb_sea_answer_three.text = seaQuestion.correctOption
         rb_sea_answer_four.text = seaQuestion.optionThree
-        tv_progress.text = "$seaQuestionNumber" + "/" + seaQuestionsList.size
+        tv_progress.text = "2" + "/" + seaQuestionsList.size
 
         // CHECK RADIO BUTTON SELECTION
         var answer: RadioButton
@@ -38,7 +38,7 @@ class SeaQuestionTwoActivity : AppCompatActivity() {
         btn_next.setOnClickListener{
 
             //GET THE CHECKED RADIO BUTTON ID
-            var id: Int = rg_landOptions.checkedRadioButtonId
+            var id: Int = rg_seaOptions.checkedRadioButtonId
             if (id!=-1){
 
                 //CAPTURE THE ANSWER

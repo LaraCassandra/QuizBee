@@ -21,8 +21,8 @@ class SkyQuestionTwoActivity : AppCompatActivity() {
         // GET QUESTION
         val skyQuestionsList = Constants.getSkyQuestions()
 
-        val skyQuestionNumber = 2
-        val skyQuestion = skyQuestionsList[skyQuestionNumber]
+        //val skyQuestionNumber = 2
+        val skyQuestion = skyQuestionsList[1]
 
         // SET FRONTEND ELEMENTS (DISPLAY THE QUESTION AND ANSWER OPTIONS)
         tv_skyQuestion.text = skyQuestion.question
@@ -30,7 +30,7 @@ class SkyQuestionTwoActivity : AppCompatActivity() {
         rb_sky_answer_two.text = skyQuestion.optionTwo
         rb_sky_answer_three.text = skyQuestion.correctOption
         rb_sky_answer_four.text = skyQuestion.optionThree
-        tv_progress.text = "$skyQuestionNumber" + "/" + skyQuestionsList.size
+        tv_progress.text = "2" + "/" + skyQuestionsList.size
 
         // CHECK RADIO BUTTON SELECTION
         var answer: RadioButton
@@ -40,7 +40,7 @@ class SkyQuestionTwoActivity : AppCompatActivity() {
         btn_next.setOnClickListener{
 
             //GET THE CHECKED RADIO BUTTON ID
-            var id: Int = rg_landOptions.checkedRadioButtonId
+            var id: Int = rg_skyOptions.checkedRadioButtonId
             if (id!=-1){
 
                 //CAPTURE THE ANSWER

@@ -16,8 +16,8 @@ class LandQuestionOneActivity : AppCompatActivity() {
         // GET QUESTION 1
         val landQuestionsList = Constants.getLandQuestions()
 
-        val landQuestionNumber = 1
-        val landQuestion = landQuestionsList[landQuestionNumber - 1]
+        //val landQuestionNumber = 1
+        val landQuestion = landQuestionsList[0]
 
         // SET FRONTEND ELEMENTS (DISPLAY THE QUESTION AND ANSWER OPTIONS)
         tv_landQuestion.text = landQuestion.question
@@ -25,7 +25,7 @@ class LandQuestionOneActivity : AppCompatActivity() {
         rb_land_answer_two.text = landQuestion.optionTwo
         rb_land_answer_three.text = landQuestion.correctOption
         rb_land_answer_four.text = landQuestion.optionThree
-        tv_progress.text = "$landQuestionNumber" + "/" + landQuestionsList.size
+        tv_progress.text = "1" + "/" + landQuestionsList.size
 
         // CHECK RADIO BUTTON SELECTION
         var answer: RadioButton
