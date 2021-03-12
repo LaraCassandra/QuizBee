@@ -12,6 +12,7 @@ class LandQuestionTwoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_land_question_two)
 
+        val username = intent.getStringExtra(Constants.USER_NAME)
         var landWrongAnswers = intent.getIntExtra(Constants.LAND_WRONG_ANSWERS, 0)
 
         // GET QUESTION
@@ -49,6 +50,7 @@ class LandQuestionTwoActivity : AppCompatActivity() {
                 //NAVIGATION
                 val intent = Intent(this, LandQuestionThreeActivity::class.java)
                 intent.putExtra(Constants.LAND_WRONG_ANSWERS, landWrongAnswers)
+                intent.putExtra(Constants.USER_NAME, username)
                 startActivity(intent)
                 finish()
 
