@@ -19,5 +19,17 @@ class CategoriesActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // CATEGORY 2
+        btn_cat2.setOnClickListener{
+            val intent = Intent(this, SeaQuestionOneActivity::class.java)
+            startActivity(intent)
+        }
+
+        // CATEGORY 3
+        btn_cat3.setOnClickListener{
+            val intent = Intent(this, SkyQuestionOneActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
