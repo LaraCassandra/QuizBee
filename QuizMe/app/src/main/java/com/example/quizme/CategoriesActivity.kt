@@ -32,7 +32,7 @@ class CategoriesActivity : AppCompatActivity() {
         }
 
         // CATEGORY 4
-        btn_cat3.setOnClickListener{
+        btn_cat4.setOnClickListener{
             val intent = Intent(this, GeneralQuestionOneActivity::class.java)
             startActivity(intent)
         }
