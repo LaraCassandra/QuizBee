@@ -23,10 +23,10 @@ class GeneralQuestionThreeActivity : AppCompatActivity() {
 
         // SET FRONTEND ELEMENTS (DISPLAY THE QUESTION AND ANSWER OPTIONS)
         tv_generalQuestion.text = generalQuestion.question
-        rb_general_answer_one.text = generalQuestion.optionOne
+        rb_general_answer_one.text = generalQuestion.optionThree
         rb_general_answer_two.text = generalQuestion.optionTwo
-        rb_general_answer_three.text = generalQuestion.correctOption
-        rb_general_answer_four.text = generalQuestion.optionThree
+        rb_general_answer_three.text = generalQuestion.optionOne
+        rb_general_answer_four.text = generalQuestion.correctOption
         tv_progress.text = "3" + "/" + generalQuestionsList.size
 
         // CHECK RADIO BUTTON SELECTION

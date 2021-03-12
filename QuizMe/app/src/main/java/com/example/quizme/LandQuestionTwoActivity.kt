@@ -23,8 +23,8 @@ class LandQuestionTwoActivity : AppCompatActivity() {
         // SET FRONTEND ELEMENTS
         tv_landQuestion.text = landQuestion.question
         rb_land_answer_one.text = landQuestion.optionOne
-        rb_land_answer_two.text = landQuestion.optionTwo
-        rb_land_answer_three.text = landQuestion.correctOption
+        rb_land_answer_two.text = landQuestion.correctOption
+        rb_land_answer_three.text = landQuestion.optionTwo
         rb_land_answer_four.text = landQuestion.optionThree
         tv_progress.text = "2" + "/" + landQuestionsList.size
 

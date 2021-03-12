@@ -25,9 +25,9 @@ class SeaQuestionThreeActivity : AppCompatActivity() {
 
         // SET FRONTEND ELEMENTS (DISPLAY THE QUESTION AND ANSWER OPTIONS)
         tv_seaQuestion.text = seaQuestion.question
-        rb_sea_answer_one.text = seaQuestion.optionOne
+        rb_sea_answer_one.text = seaQuestion.correctOption
         rb_sea_answer_two.text = seaQuestion.optionTwo
-        rb_sea_answer_three.text = seaQuestion.correctOption
+        rb_sea_answer_three.text = seaQuestion.optionOne
         rb_sea_answer_four.text = seaQuestion.optionThree
         tv_progress.text = "3" + "/" + seaQuestionsList.size
 

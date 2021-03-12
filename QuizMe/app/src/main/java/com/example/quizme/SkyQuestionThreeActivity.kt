@@ -26,8 +26,8 @@ class SkyQuestionThreeActivity : AppCompatActivity() {
         // SET FRONTEND ELEMENTS (DISPLAY THE QUESTION AND ANSWER OPTIONS)
         tv_skyQuestion.text = skyQuestion.question
         rb_sky_answer_one.text = skyQuestion.optionOne
-        rb_sky_answer_two.text = skyQuestion.optionTwo
-        rb_sky_answer_three.text = skyQuestion.correctOption
+        rb_sky_answer_two.text = skyQuestion.correctOption
+        rb_sky_answer_three.text = skyQuestion.optionTwo
         rb_sky_answer_four.text = skyQuestion.optionThree
         tv_progress.text = "3" + "/" + skyQuestionsList.size
 
