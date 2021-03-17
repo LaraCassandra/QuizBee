@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizMe">
-        <activity android:name=".ResultsPageActivity"></activity>
+        <activity android:name=".GeneralResultsActivity"></activity>
+        <activity android:name=".SkyResultsActivity" />
+        <activity android:name=".SeaResultsActivity" />
+        <activity android:name=".LandResultsActivity" />
         <activity
             android:name=".GeneralQuestionThreeActivity"
             android:label="General - Question 3"

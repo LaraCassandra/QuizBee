@@ -50,7 +50,7 @@ class SeaQuestionThreeActivity : AppCompatActivity() {
                 }
 
                 //NAVIGATION
-                val intent = Intent(this, ResultsPageActivity::class.java)
+                val intent = Intent(this, LandResultsActivity::class.java)
                 intent.putExtra(Constants.SEA_WRONG_ANSWERS, seaWrongAnswers)
                 startActivity(intent)
                 finish()

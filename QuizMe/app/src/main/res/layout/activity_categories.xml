@@ -54,8 +54,8 @@
 
         <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="40dp"
+            android:layout_height="350dp"
+            android:layout_margin="30dp"
             android:columnCount="2"
             android:rowCount="2">
 
@@ -64,44 +64,48 @@
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:background="@color/white"
+                android:text="Land Animals"
                 android:backgroundTint="@color/white"
-                android:textSize="8pt"
-                android:layout_margin="15dp"
-                android:text="Button"/>
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textAllCaps="false"/>
 
             <Button
                 android:id="@+id/btn_cat2"
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:background="@color/white"
+                android:text="Sea Creatures"
                 android:backgroundTint="@color/white"
-                android:textSize="8pt"
-                android:layout_margin="15dp"
-                android:text="Button"/>
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textAllCaps="false"/>
 
             <Button
                 android:id="@+id/btn_cat3"
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:background="@color/white"
+                android:text="Sky Beings"
                 android:backgroundTint="@color/white"
-                android:textSize="8pt"
-                android:layout_margin="15dp"
-                android:text="Button"/>
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textAllCaps="false"/>
 
             <Button
                 android:id="@+id/btn_cat4"
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:background="@color/white"
+                android:text="General"
                 android:backgroundTint="@color/white"
-                android:textSize="8pt"
-                android:layout_margin="15dp"
-                android:text="Button"/>
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textAllCaps="false"/>
 
 
 
