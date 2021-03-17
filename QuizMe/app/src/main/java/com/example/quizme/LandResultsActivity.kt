@@ -5,9 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_land_flag_results.*
 import kotlinx.android.synthetic.main.activity_land_results.*
-import kotlinx.android.synthetic.main.activity_land_results.tv_username
 import kotlinx.android.synthetic.main.activity_land_flag_results.btn_back as btn_back1
-import kotlinx.android.synthetic.main.activity_land_results.tv_score as tv_score1
 
 class LandResultsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,20 +13,18 @@ class LandResultsActivity : AppCompatActivity() {
 
         // GET INTENT
         val username = intent.getStringExtra(Constants.USER_NAME)
-        val wrongAnswers = intent.getIntExtra(Constants.LAND_WRONG_ANSWERS, 0)
+        val landWrongAnswers = intent.getIntExtra(Constants.LAND_WRONG_ANSWERS, 0)
 
         // GET SCORE
-        val score = 3 - wrongAnswers
+        val landScore = 3 - landWrongAnswers
 
         // SET VIEW BASED ON SCORE
-        if (wrongAnswers >= 2){
+        if (landWrongAnswers >= 2){
             setContentView(R.layout.activity_land_flag_results)
-            tv_username.text = "${username}!"
-            tv_score.text = "${score}/3"
+            tv_landFlagScore.text = "${landScore}/3"
         } else {
             setContentView(R.layout.activity_land_results)
-            tv_username.text = "${username}!"
-            tv_score.text = "${score}/3"
+            tv_landScore.text = "${landScore}/3"
         }
 
         // BACK BUTTON LISTENER

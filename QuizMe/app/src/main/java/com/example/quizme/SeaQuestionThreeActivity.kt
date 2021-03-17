@@ -15,6 +15,7 @@ class SeaQuestionThreeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sea_question_three)
 
+        val username = intent.getStringExtra(Constants.USER_NAME)
         var seaWrongAnswers = intent.getIntExtra(Constants.SEA_WRONG_ANSWERS, 0)
 
         // GET QUESTION 2
@@ -50,8 +51,9 @@ class SeaQuestionThreeActivity : AppCompatActivity() {
                 }
 
                 //NAVIGATION
-                val intent = Intent(this, LandResultsActivity::class.java)
+                val intent = Intent(this, SeaResultsActivity::class.java)
                 intent.putExtra(Constants.SEA_WRONG_ANSWERS, seaWrongAnswers)
+                intent.putExtra(Constants.USER_NAME, username)
                 startActivity(intent)
                 finish()
 

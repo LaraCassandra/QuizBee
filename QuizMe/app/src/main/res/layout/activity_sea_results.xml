@@ -29,16 +29,6 @@
             android:gravity="center"
             android:textSize="12pt"/>
 
-        <TextView
-            android:id="@+id/tv_username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="username!"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:textSize="12pt"/>
-
         <ImageView
             android:id="@+id/imageView"
             android:background="@drawable/ic_moon"
@@ -57,7 +47,7 @@
             android:textAlignment="center"/>
 
         <TextView
-            android:id="@+id/tv_score"
+            android:id="@+id/tv_seaScore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="3/3"
