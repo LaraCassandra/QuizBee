@@ -22,7 +22,7 @@ class SeaQuestionOneActivity : AppCompatActivity() {
         // GET QUESTION 1
         val seaQuestionsList = Constants.getSeaQuestions()
 
-        //val seaQuestionNumber = 1
+        val seaQuestionNumber = 1
         val seaQuestion = seaQuestionsList[0]
 
         // SET FRONTEND ELEMENTS (DISPLAY THE QUESTION AND ANSWER OPTIONS)
@@ -31,6 +31,8 @@ class SeaQuestionOneActivity : AppCompatActivity() {
         rb_sea_answer_two.text = seaQuestion.optionTwo
         rb_sea_answer_three.text = seaQuestion.optionThree
         rb_sea_answer_four.text = seaQuestion.correctOption
+
+        pb_seaProgressBar.progress = seaQuestionNumber
         tv_progress.text = "Question 1" + "/" + seaQuestionsList.size
 
         // CHECK RADIO BUTTON SELECTION
