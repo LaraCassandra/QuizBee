@@ -6,7 +6,10 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.RadioButton
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_general_question_one.*
 import kotlinx.android.synthetic.main.activity_land_question_one.*
+import kotlinx.android.synthetic.main.activity_land_question_one.btn_next
+import kotlinx.android.synthetic.main.activity_land_question_one.tv_progress
 
 class LandQuestionOneActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +21,7 @@ class LandQuestionOneActivity : AppCompatActivity() {
         // GET QUESTION 1
         val landQuestionsList = Constants.getLandQuestions()
 
+        val landQuestionNumber = 1
         val landQuestion = landQuestionsList[0]
 
         // SET FRONTEND ELEMENTS (DISPLAY THE QUESTION AND ANSWER OPTIONS)
@@ -26,6 +30,8 @@ class LandQuestionOneActivity : AppCompatActivity() {
         rb_land_answer_two.text = landQuestion.optionTwo
         rb_land_answer_three.text = landQuestion.correctOption
         rb_land_answer_four.text = landQuestion.optionThree
+
+        pb_landProgressBar.progress = landQuestionNumber
         tv_progress.text = "Question 1" + "/" + landQuestionsList.size
 
         // CHECK RADIO BUTTON SELECTION
