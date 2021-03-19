@@ -20,6 +20,7 @@ class GeneralQuestionTwoActivity : AppCompatActivity() {
         // GET QUESTION
         val generalQuestionsList = Constants.getGeneralQuestions()
 
+        val generalQuestionNumber = 2
         val generalQuestion = generalQuestionsList[1]
 
         // SET FRONTEND ELEMENTS (DISPLAY THE QUESTION AND ANSWER OPTIONS)
@@ -28,7 +29,9 @@ class GeneralQuestionTwoActivity : AppCompatActivity() {
         rb_general_answer_two.text = generalQuestion.correctOption
         rb_general_answer_three.text = generalQuestion.optionOne
         rb_general_answer_four.text = generalQuestion.optionThree
-        tv_progress.text = "2" + "/" + generalQuestionsList.size
+
+        pb_generalProgressBar.progress = generalQuestionNumber
+        tv_progress.text = "Question 2" + "/" + generalQuestionsList.size
 
         // CHECK RADIO BUTTON SELECTION
         var answer: RadioButton

@@ -29,73 +29,73 @@
             android:name=".GeneralQuestionThreeActivity"
             android:label="General - Question 3"
             android:screenOrientation="portrait"
-            android:theme="@style/QuestionsTheme"
+            android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".GeneralQuestionTwoActivity"
             android:label="General - Question 2"
             android:screenOrientation="portrait"
-            android:theme="@style/QuestionsTheme"
+            android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".GeneralQuestionOneActivity"
             android:label="General - Question 1"
             android:screenOrientation="portrait"
-            android:theme="@style/QuestionsTheme"
+            android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".SkyQuestionOneActivity"
             android:label="Sky Beings - Question 1"
             android:screenOrientation="portrait"
-            android:theme="@style/QuestionsTheme"
+            android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".SkyQuestionThreeActivity"
             android:label="Sky Beings - Question 3"
             android:screenOrientation="portrait"
-            android:theme="@style/QuestionsTheme"
+            android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".SkyQuestionTwoActivity"
             android:label="Sky Beings - Question 2"
             android:screenOrientation="portrait"
-            android:theme="@style/QuestionsTheme"
+            android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".SeaQuestionThreeActivity"
             android:label="Sea Creatures - Question 3"
             android:screenOrientation="portrait"
-            android:theme="@style/QuestionsTheme"
+            android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".SeaQuestionTwoActivity"
             android:label="Sea Creatures - Question 2"
             android:screenOrientation="portrait"
-            android:theme="@style/QuestionsTheme"
+            android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".SeaQuestionOneActivity"
             android:label="Sea Creatures - Question 1"
             android:screenOrientation="portrait"
-            android:theme="@style/QuestionsTheme"
+            android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".LandQuestionThreeActivity"
             android:label="Land Animals - Question 3"
             android:screenOrientation="portrait"
-            android:theme="@style/QuestionsTheme"
+            android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".LandQuestionTwoActivity"
             android:label="Land Animals - Question 2"
             android:screenOrientation="portrait"
-            android:theme="@style/QuestionsTheme"
+            android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".LandQuestionOneActivity"
             android:label="Land Animals - Question 1"
             android:screenOrientation="portrait"
-            android:theme="@style/QuestionsTheme"
+            android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".CategoriesActivity"

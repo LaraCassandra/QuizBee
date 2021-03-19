@@ -27,7 +27,7 @@ class LandQuestionThreeActivity : AppCompatActivity() {
         rb_land_answer_two.text = landQuestion.optionTwo
         rb_land_answer_three.text = landQuestion.optionThree
         rb_land_answer_four.text = landQuestion.correctOption
-        tv_progress.text = "3" + "/" + landQuestionsList.size
+        tv_progress.text = "Question 3" + "/" + landQuestionsList.size
 
         // CHECK RADIO BUTTON SELECTION
         var answer: RadioButton

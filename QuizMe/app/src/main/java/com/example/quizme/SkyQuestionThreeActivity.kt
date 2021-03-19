@@ -29,7 +29,7 @@ class SkyQuestionThreeActivity : AppCompatActivity() {
         rb_sky_answer_two.text = skyQuestion.correctOption
         rb_sky_answer_three.text = skyQuestion.optionTwo
         rb_sky_answer_four.text = skyQuestion.optionThree
-        tv_progress.text = "3" + "/" + skyQuestionsList.size
+        tv_progress.text = "Question 3" + "/" + skyQuestionsList.size
 
         // CHECK RADIO BUTTON SELECTION
         var answer: RadioButton

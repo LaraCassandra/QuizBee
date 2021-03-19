@@ -19,97 +19,193 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
+        <ImageView
+            android:background="@drawable/ic_bee"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Categories"
             android:gravity="center"
             android:textStyle="bold"
-            android:layout_marginTop="150dp"
             android:textColor="@color/white"
             android:textSize="12pt"/>
 
         <TextView
-            android:id="@+id/tv_name"
+            android:id="@+id/tv_msg"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
             android:layout_gravity="center"
-            android:text=""
+            android:text="Choose a category and start testing your animal knowledge"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="7pt"
             android:textAlignment="center"
             android:layout_marginTop="10dp"/>
 
-        <TextView
-            android:id="@+id/tv_msg"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Choose a category to start playing a quiz!"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="7pt"
-            android:textAlignment="center"/>
-
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:layout_margin="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
             android:columnCount="2"
             android:rowCount="2">
 
-            <Button
+            <!-- Category 1 -->
+            <LinearLayout
                 android:id="@+id/btn_cat1"
+                android:clickable="true"
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:text="Land Animals"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/blue"
-                android:textStyle="bold"
-                android:layout_margin="10dp"
-                android:textAllCaps="false"/>
+                android:layout_height="20dp"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="10dp">
 
-            <Button
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/tree"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="20dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Land Animals"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="7pt"
+                        android:textAlignment="center"
+                        android:layout_marginTop="100dp"/>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Category 2 -->
+            <LinearLayout
                 android:id="@+id/btn_cat2"
+                android:clickable="true"
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:text="Sea Creatures"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/blue"
-                android:textStyle="bold"
-                android:layout_margin="10dp"
-                android:textAllCaps="false"/>
+                android:layout_height="20dp"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="10dp">
 
-            <Button
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/water"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Sea Creatures"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="7pt"
+                        android:textAlignment="center"
+                        android:layout_marginTop="100dp"/>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Category 3 -->
+            <LinearLayout
                 android:id="@+id/btn_cat3"
+                android:clickable="true"
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:text="Sky Beings"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/blue"
-                android:textStyle="bold"
-                android:layout_margin="10dp"
-                android:textAllCaps="false"/>
+                android:layout_height="20dp"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="10dp">>
 
-            <Button
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/cloud"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="Sky Beings"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="7pt"
+                        android:textAlignment="center"
+                        android:layout_marginTop="100dp"/>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Category 4 -->
+            <LinearLayout
                 android:id="@+id/btn_cat4"
+                android:clickable="true"
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:text="General"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/blue"
-                android:textStyle="bold"
-                android:layout_margin="10dp"
-                android:textAllCaps="false"/>
+                android:layout_height="20dp"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="10dp">>
 
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/world"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="20dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="General"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="7pt"
+                        android:textAlignment="center"
+                        android:layout_marginTop="100dp"/>
 
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
         </GridLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="@color/blue"/>
 
     </LinearLayout>
 

@@ -30,7 +30,7 @@ class SeaQuestionThreeActivity : AppCompatActivity() {
         rb_sea_answer_two.text = seaQuestion.optionTwo
         rb_sea_answer_three.text = seaQuestion.optionOne
         rb_sea_answer_four.text = seaQuestion.optionThree
-        tv_progress.text = "3" + "/" + seaQuestionsList.size
+        tv_progress.text = "Question 3" + "/" + seaQuestionsList.size
 
         // CHECK RADIO BUTTON SELECTION
         var answer: RadioButton
