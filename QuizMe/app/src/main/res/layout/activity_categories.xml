@@ -200,9 +200,14 @@
         </GridLayout>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_last_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
+            android:src="@drawable/ic_trophy"
+            app:tint="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="50dp"
             android:backgroundTint="@color/blue"/>

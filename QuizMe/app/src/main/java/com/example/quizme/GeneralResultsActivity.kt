@@ -29,15 +29,6 @@ class GeneralResultsActivity : AppCompatActivity() {
         }
 
 
-
-        // BACK BUTTON LISTENER
-        btn_back.setOnClickListener{
-            // NAVIGATE BACK TO CATEGORIES PAGE
-            val intent = Intent(this, CategoriesActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
         // SHARED PREFERENCES
         val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
         val editor = sharedPref.edit()
@@ -47,6 +38,16 @@ class GeneralResultsActivity : AppCompatActivity() {
             putInt(Constants.GEN_WRONG_ANSWERS, generalWrongAnswers)
             apply()
         }
+
+
+        // BACK BUTTON LISTENER
+        btn_back.setOnClickListener{
+            // NAVIGATE BACK TO CATEGORIES PAGE
+            val intent = Intent(this, CategoriesActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
 
     }
 }

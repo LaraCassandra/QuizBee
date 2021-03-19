@@ -9,22 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizMe">
+        <activity android:name=".ScoreActivity"></activity>
         <activity
             android:name=".GeneralResultsActivity"
             android:theme="@style/NoActionBarTheme"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".SkyResultsActivity"
             android:theme="@style/NoActionBarTheme"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".SeaResultsActivity"
             android:theme="@style/NoActionBarTheme"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".LandResultsActivity"
             android:theme="@style/NoActionBarTheme"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".GeneralQuestionThreeActivity"
             android:label="General - Question 3"

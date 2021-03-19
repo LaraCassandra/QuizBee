@@ -1,10 +1,15 @@
 package com.example.quizme
 
+import android.app.Dialog
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.AlarmClock.EXTRA_MESSAGE
+import android.view.Window
 import android.widget.Button
+import android.widget.PopupMenu
+import android.widget.PopupWindow
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_categories.*
 
@@ -35,6 +40,12 @@ class CategoriesActivity : AppCompatActivity() {
         btn_cat4.setOnClickListener{
             val intent = Intent(this, GeneralQuestionOneActivity::class.java)
             startActivity(intent)
+        }
+
+        fab_last_user.setOnClickListener {
+
+
+
         }
 
     }

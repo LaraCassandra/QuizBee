@@ -1,5 +1,6 @@
 package com.example.quizme
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -26,6 +27,18 @@ class SeaResultsActivity : AppCompatActivity() {
             setContentView(R.layout.activity_sea_results)
             tv_seaScore.text = "${seaScore}/3"
         }
+
+
+        // SHARED PREFERENCES
+        val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+
+        editor.apply{
+            putString(Constants.USER_NAME, username)
+            putInt(Constants.SEA_WRONG_ANSWERS, seaWrongAnswers)
+            apply()
+        }
+
 
         // BACK BUTTON LISTENER
         btn_back.setOnClickListener{

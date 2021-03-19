@@ -1,5 +1,6 @@
 package com.example.quizme
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -25,6 +26,16 @@ class LandResultsActivity : AppCompatActivity() {
         } else {
             setContentView(R.layout.activity_land_results)
             tv_landScore.text = "${landScore}/3"
+        }
+
+        // SHARED PREFERENCES
+        val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+
+        editor.apply{
+            putString(Constants.USER_NAME, username)
+            putInt(Constants.LAND_WRONG_ANSWERS, landWrongAnswers)
+            apply()
         }
 
         // BACK BUTTON LISTENER
