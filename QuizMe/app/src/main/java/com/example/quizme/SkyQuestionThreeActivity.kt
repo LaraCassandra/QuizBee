@@ -20,7 +20,7 @@ class SkyQuestionThreeActivity : AppCompatActivity() {
         // GET QUESTION
         val skyQuestionsList = Constants.getSkyQuestions()
 
-        //val skyQuestionNumber = 3
+        val skyQuestionNumber = 3
         val skyQuestion = skyQuestionsList[2]
 
         // SET FRONTEND ELEMENTS (DISPLAY THE QUESTION AND ANSWER OPTIONS)
@@ -29,6 +29,8 @@ class SkyQuestionThreeActivity : AppCompatActivity() {
         rb_sky_answer_two.text = skyQuestion.correctOption
         rb_sky_answer_three.text = skyQuestion.optionTwo
         rb_sky_answer_four.text = skyQuestion.optionThree
+
+        pb_skyProgressBar.progress = skyQuestionNumber
         tv_progress.text = "Question 3" + "/" + skyQuestionsList.size
 
         // CHECK RADIO BUTTON SELECTION
