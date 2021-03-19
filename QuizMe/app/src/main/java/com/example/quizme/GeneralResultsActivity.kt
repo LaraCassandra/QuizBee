@@ -28,6 +28,8 @@ class GeneralResultsActivity : AppCompatActivity() {
             tv_genScore.text = "${generalScore}/3"
         }
 
+
+
         // BACK BUTTON LISTENER
         btn_back.setOnClickListener{
             // NAVIGATE BACK TO CATEGORIES PAGE

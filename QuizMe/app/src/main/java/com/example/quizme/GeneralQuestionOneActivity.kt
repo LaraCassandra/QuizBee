@@ -54,7 +54,7 @@ class GeneralQuestionOneActivity : AppCompatActivity() {
 
                 //NAVIGATION
                 val intent = Intent(this, GeneralQuestionTwoActivity::class.java)
-                intent.putExtra(Constants.SEA_WRONG_ANSWERS, generalWrongAnswers)
+                intent.putExtra(Constants.GEN_WRONG_ANSWERS, generalWrongAnswers)
                 startActivity(intent)
                 finish()
 
