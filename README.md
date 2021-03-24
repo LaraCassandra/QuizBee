@@ -172,7 +172,6 @@ Pick from four animal related topics - Land Animals, Sea Creatures, Sky Beings a
 See how you did in the results page and the scoreboard.
 
 <br>
-<br>
 
 ### Functions
 This project makes use of:
@@ -181,6 +180,9 @@ This project makes use of:
 - `Intents` to move through and take data to different activities
 - `Constants` to hold the arrays of questions
 - `Shared Preferences` to save the user data into local device storage
+
+<br>
+<br>
 
 <!-- CONCEPT PROCESS -->
 ## Concept Process
@@ -192,6 +194,7 @@ The ideation phase begins with different tasks to get a good idea of what the ap
 - Mindmaps
 - Moodboards
 <br>
+
 ### Wireframes
 
 <img src="images/wireframes.png" alt="Wireframes">
