@@ -1,5 +1,6 @@
 package com.example.quizme
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -33,6 +34,17 @@ class MainActivity : AppCompatActivity() {
                 finish()
             }
 
+        }
+
+        val username = intent.getStringExtra(Constants.USER_NAME)
+
+        // SHARED PREFERENCES
+        val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+
+        editor.apply{
+            putString(Constants.USER_NAME, username)
+            apply()
         }
 
     }

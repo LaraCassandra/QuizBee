@@ -8,8 +8,6 @@ import android.os.Bundle
 import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.view.Window
 import android.widget.Button
-import android.widget.PopupMenu
-import android.widget.PopupWindow
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_categories.*
 
@@ -43,10 +41,10 @@ class CategoriesActivity : AppCompatActivity() {
         }
 
         fab_last_user.setOnClickListener {
-
-
-
+            val intent = Intent(this, ScoreBoard::class.java)
+            startActivity(intent)
         }
+
 
     }
 }

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizMe">
-        <activity android:name=".ScoreActivity"></activity>
+        <activity
+            android:name=".ScoreBoard"
+            android:theme="@style/NoActionBarTheme"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".GeneralResultsActivity"
             android:theme="@style/NoActionBarTheme"
