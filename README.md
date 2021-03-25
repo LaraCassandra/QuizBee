@@ -185,7 +185,6 @@ The ideation phase begins with different tasks to get a good idea of what the ap
 - Research
 - Mindmaps
 - Moodboards
-<br>
 
 ### Wireframes
 
@@ -194,6 +193,8 @@ The ideation phase begins with different tasks to get a good idea of what the ap
 <br>
 
 ### Userflow
+
+<img src="images/userflow.png" alt="Userflow">
 
 <br>
 
