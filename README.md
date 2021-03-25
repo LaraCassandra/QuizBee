@@ -93,7 +93,6 @@
 <img src="images/intro.png" alt="About project">
 
 <br>
-<br>
 
 In times of COVID-19 and the lockdown, a lighthearted trivia is just the right thing to get anyone feeling better. For Android 301 we were required to create a fun trivia app to cheer up our friends and family in these tough times.
 
@@ -116,13 +115,10 @@ QuizBee is an android application built using:
 
 Let's get started, simply follow the steps below and you'll have your own copy up and running to do with whatever your heart may desire.
 
-<br>
 
 ### Prerequisites
 
 This project requires that you have the latest version of Android Studio, but no worries, you can download Android Studio [here](https://developer.android.com/studio)!
-
-<br>
 
 ### Installation
 
@@ -149,7 +145,6 @@ https://github.com/LaraCassandra/QuizBee.git
 
 <br>
 
-
 <!-- FEATURES AND FUNCTIONS -->
 ## Features and Functions
 
@@ -158,13 +153,11 @@ https://github.com/LaraCassandra/QuizBee.git
 Enter your name and get the show on the road.
 
 <br>
-<br>
 
 ### Choose a topic
 <img src="images/feature2.png" alt="Feature Two">
 Pick from four animal related topics - Land Animals, Sea Creatures, Sky Beings and General.
 
-<br>
 <br>
 
 ### See your results
@@ -181,7 +174,6 @@ This project makes use of:
 - `Constants` to hold the arrays of questions
 - `Shared Preferences` to save the user data into local device storage
 
-<br>
 <br>
 
 <!-- CONCEPT PROCESS -->
@@ -243,6 +235,10 @@ In week 6, we were able to get **valuable** feedback from our lecturer and peer 
 <br>
 
 ## Video Demonstration
+
+<video width="320" height="240" controls>
+  <source src="images/LaraCook_190218_Android301_Demo.mp4" type=video/mp4>
+</video>
 
 <br>
  
