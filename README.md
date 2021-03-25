@@ -237,9 +237,7 @@ In week 6, we were able to get **valuable** feedback from our lecturer and peer 
 
 ## Video Demonstration
 
-<video width="320" height="240" controls>
-  <source src="images/LaraCook_190218_Android301_Demo.mp4" type=video/mp4>
-</video>
+[Download Demo](https://github.com/LaraCassandra/QuizBee/blob/main/images/LaraCook_190218_Android301_Demo.mp4)
 
 <br>
  
